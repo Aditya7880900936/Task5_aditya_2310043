@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Unit Convertor</string>
+    <string name="unit_convertor">Unit Convertor</string>
+    <string name="convert_your_unit_in_seconds">Convert Your Unit In Seconds</string>
 </resources>
