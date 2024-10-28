@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
+    android:id="@+id/CelciusKelvin"
     tools:context=".CelciusKelvin">
 
     <TextView
@@ -26,7 +27,7 @@
         android:ems="10"
         android:inputType="number"
         android:textColor="@color/black"
-        android:text="Enter the temp. in Celcius"
+        android:hint="Enter the temp. in Celcius"
         android:layout_marginTop="35dp"
         android:layout_gravity="center"/>
 
@@ -52,6 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Back To HomePage"
+        android:id="@+id/Home_Button"
         android:layout_marginTop="50dp"/>
 
     <ImageView

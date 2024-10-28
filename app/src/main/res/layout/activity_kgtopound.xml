@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/KilotoPound"
     android:orientation="vertical"
     android:background="@color/white"
     tools:context=".kgtopound">
@@ -26,7 +27,7 @@
         android:ems="10"
         android:inputType="number"
         android:textColor="@color/black"
-        android:text="Enter the weight in kg"
+        android:hint="Enter the weight in kg"
         android:layout_marginTop="35dp"
         android:layout_gravity="center"/>
 
@@ -51,6 +52,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/Home_Button"
+
         android:text="Back To HomePage"
         android:layout_marginTop="50dp"/>
 

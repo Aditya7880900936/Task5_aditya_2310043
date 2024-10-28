@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/SqmtoAcre"
     android:background="@color/white"
     tools:context=".sqmtoacre">
 
@@ -26,7 +27,7 @@
         android:ems="10"
         android:inputType="number"
         android:textColor="@color/black"
-        android:text="Enter the Area in m.sq."
+        android:hint="Enter the Area in m.sq."
         android:layout_marginTop="35dp"
         android:layout_gravity="center"/>
 
@@ -52,6 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Back To HomePage"
+        android:id="@+id/Home_Button"
         android:layout_marginTop="50dp"/>
 
     <ImageView

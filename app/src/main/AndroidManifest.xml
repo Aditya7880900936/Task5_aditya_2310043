@@ -13,6 +13,18 @@
         android:theme="@style/Theme.UnitConvertor"
         tools:targetApi="31">
         <activity
+            android:name=".splashActivitty"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Main activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".sqmtoacre"
             android:exported="false" />
         <activity
@@ -30,18 +42,7 @@
         <activity
             android:name=".CelciusKelvin"
             android:exported="false" /> <!-- Splash activity with MAIN and LAUNCHER intent-filter -->
-        <activity
-            android:name=".splashActivitty"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity> <!-- Main activity -->
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
     </application>
 
 </manifest>

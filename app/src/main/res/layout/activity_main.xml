@@ -27,7 +27,7 @@
 
        <androidx.cardview.widget.CardView
            android:layout_width="150dp"
-           android:id="@+id/CelciusKelvin"
+           android:id="@+id/CelKel"
            android:layout_height="180dp"
            app:cardBackgroundColor="@color/white"
            android:layout_marginTop="25dp"
@@ -57,6 +57,7 @@
        <androidx.cardview.widget.CardView
            android:layout_width="150dp"
            android:layout_height="180dp"
+           android:id="@+id/kgtopound"
            app:cardBackgroundColor="@color/white"
            android:layout_marginTop="25dp"
            android:layout_marginLeft="25dp"
@@ -93,6 +94,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="180dp"
+            android:id="@+id/pressure"
             app:cardBackgroundColor="@color/white"
             android:layout_marginTop="25dp"
             android:layout_marginLeft="25dp"
@@ -123,6 +125,7 @@
             android:layout_height="180dp"
             app:cardBackgroundColor="@color/white"
             android:layout_marginTop="25dp"
+            android:id="@+id/metertofeet"
             android:layout_marginLeft="25dp"
             app:cardCornerRadius="10dp">
 
@@ -158,6 +161,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="180dp"
+            android:id="@+id/KilotoMilestone"
             app:cardBackgroundColor="@color/white"
             android:layout_marginTop="25dp"
             android:layout_marginLeft="25dp"
@@ -188,6 +192,7 @@
             android:layout_height="180dp"
             app:cardBackgroundColor="@color/white"
             android:layout_marginTop="25dp"
+            android:id="@+id/areaconversion"
             android:layout_marginLeft="25dp"
             app:cardCornerRadius="10dp">
 
