@@ -3,6 +3,8 @@ package com.example.unitconvertor
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -25,5 +27,19 @@ class pressureConversion : AppCompatActivity() {
             val intent = Intent(this@pressureConversion, MainActivity::class.java)
             startActivity(intent)
         }
+        val edt : EditText = findViewById<EditText>(R.id.mmHGText)
+        val btn : Button = findViewById<Button>(R.id.barConvertor)
+        val resultText: TextView = findViewById<TextView>(R.id.barResult)
+
+        btn.setOnClickListener(){
+            val pressure : Double = edt.text.toString().toDouble()
+
+            resultText.setText("" + converttobar(pressure) + " " + "bar")
+        }
+    }
+    fun converttobar(pressure : Double): Double{
+        var bar = pressure* 0.00133322
+
+        return bar
     }
 }

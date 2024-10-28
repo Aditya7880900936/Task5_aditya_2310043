@@ -3,6 +3,8 @@ package com.example.unitconvertor
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -25,5 +27,19 @@ class meterFeet : AppCompatActivity() {
             val intent = Intent(this@meterFeet , MainActivity::class.java)
             startActivity(intent)
         }
+        val edt : EditText = findViewById<EditText>(R.id.meterText)
+        val btn : Button = findViewById<Button>(R.id.feetConvertor)
+        val resultText: TextView = findViewById<TextView>(R.id.feetResult)
+
+        btn.setOnClickListener(){
+            val meter: Double = edt.text.toString().toDouble()
+
+            resultText.setText("" + converttofeet(meter) + " " + "feet")
+        }
+    }
+    fun converttofeet(meter : Double): Double{
+        var feet = meter * 3.28
+
+        return feet
     }
 }

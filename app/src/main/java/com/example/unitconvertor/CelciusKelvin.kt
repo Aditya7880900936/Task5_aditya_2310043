@@ -3,6 +3,8 @@ package com.example.unitconvertor
 import android.os.Bundle
 import android.content.Intent
 import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -25,6 +27,19 @@ class CelciusKelvin : AppCompatActivity() {
             val intent = Intent(this@CelciusKelvin , MainActivity::class.java)
             startActivity(intent)
         }
+        val edt : EditText = findViewById<EditText>(R.id.celciusText)
+        val btn : Button = findViewById<Button>(R.id.kelvinConvertor)
+        val resultText: TextView = findViewById<TextView>(R.id.kelvinResult)
 
+        btn.setOnClickListener(){
+            val Celcius : Double = edt.text.toString().toDouble()
+
+            resultText.setText("" + converttoKelvin(Celcius) + " " + "Kelvin")
+        }
+    }
+    fun converttoKelvin(Celcius : Double): Double{
+        var kelvin = Celcius + 273
+
+        return kelvin
     }
 }

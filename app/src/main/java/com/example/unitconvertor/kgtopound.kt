@@ -3,6 +3,8 @@ package com.example.unitconvertor
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -25,5 +27,19 @@ class kgtopound : AppCompatActivity() {
             val intent = Intent(this@kgtopound , MainActivity::class.java)
             startActivity(intent)
         }
+        val edt : EditText = findViewById<EditText>(R.id.kgText)
+        val btn : Button = findViewById<Button>(R.id.poundConvertor)
+        val resultText: TextView = findViewById<TextView>(R.id.poundResult)
+
+        btn.setOnClickListener(){
+            val kilos : Double = edt.text.toString().toDouble()
+
+            resultText.setText("" + converttoPound(kilos) + " " + "Pound")
+        }
+    }
+    fun converttoPound(kilos : Double): Double{
+        var Pound = kilos * 2.23
+
+        return Pound
     }
 }

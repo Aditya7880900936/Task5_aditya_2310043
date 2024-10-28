@@ -3,6 +3,8 @@ package com.example.unitconvertor
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -25,5 +27,19 @@ class sqmtoacre : AppCompatActivity() {
             val intent = Intent(this@sqmtoacre, MainActivity::class.java)
             startActivity(intent)
         }
+        val edt : EditText = findViewById<EditText>(R.id.m_sq_Text)
+        val btn : Button = findViewById<Button>(R.id.AcreConvertor)
+        val resultText: TextView = findViewById<TextView>(R.id.AcreResult)
+
+        btn.setOnClickListener(){
+            val meterSquare : Double = edt.text.toString().toDouble()
+
+            resultText.setText("" + converttoacre(meterSquare) + " " + "Acre")
+        }
+    }
+    fun converttoacre(metersq: Double): Double{
+        var acre = metersq * 0.000247
+
+        return acre
     }
 }
