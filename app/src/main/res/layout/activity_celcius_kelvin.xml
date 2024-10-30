@@ -27,6 +27,8 @@
         android:ems="10"
         android:inputType="numberDecimal"
         android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+
         android:hint="Enter the temp. in Celcius"
         android:layout_marginTop="35dp"
         android:layout_gravity="center"/>

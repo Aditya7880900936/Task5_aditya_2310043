@@ -25,7 +25,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/m_sq_Text"
         android:ems="10"
-        android:inputType="number"
+        android:textColorHint="@color/grey"
+
+        android:inputType="numberDecimal"
         android:textColor="@color/black"
         android:hint="Enter the Area in m.sq."
         android:layout_marginTop="35dp"

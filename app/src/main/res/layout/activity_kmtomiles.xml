@@ -24,8 +24,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/kmtext"
+        android:textColorHint="@color/grey"
+
         android:ems="10"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:textColor="@color/black"
         android:hint="Enter the distance in km"
         android:layout_marginTop="35dp"
